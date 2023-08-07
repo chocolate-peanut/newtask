@@ -26,7 +26,8 @@ module.exports = {
             {
                 test: /\.(css|scss)$/,
                 use: [
-                    'style-loader',
+                    MiniCssExtractPlugin.loader,
+                    // 'style-loader',
                     'css-loader',
                     'sass-loader',
                 ],
@@ -38,14 +39,14 @@ module.exports = {
             template: path.resolve(__dirname, 'public', 'index.html'),
             favicon: path.resolve(__dirname, 'public', 'favicon.ico'),
         }),
-        new CopyWebpackPlugin({
-            patterns: [
-                {
-                    from: path.resolve(__dirname, 'public', 'assets'),
-                    to: 'assets',
-                },
-            ],
-        }),
+        // new CopyWebpackPlugin({
+        //     patterns: [
+        //         {
+        //             from: path.resolve(__dirname, 'public', 'assets'),
+        //             to: 'assets',
+        //         },
+        //     ],
+        // }),
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css',
             chunkFilename: '[id].[contenthash].css',
@@ -61,7 +62,10 @@ module.exports = {
         extensions: ['*', '.js', '.jsx'],
     },
     devServer: {
-        contentBase: path.resolve(__dirname, 'dist'),
+        static: {
+            directory: path.join(__dirname, 'public'),
+        },
+        // contentBase: path.resolve(__dirname, 'dist'),
         compress: true,
         port: 3000,
         historyApiFallback: true,
