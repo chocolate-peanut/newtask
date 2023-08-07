@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
 import HomePage from './Homepage';
 import PeopleTable from './PeopleTable';
 import './stylesheets/base.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {

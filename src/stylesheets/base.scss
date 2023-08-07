@@ -45,123 +45,123 @@
 @import "components/bootstrap4/utilities";
 @import "components/bootstrap4/print";
 
-// // LAYOUT
+// LAYOUT
 
-// @import "layout/layout";
+@import "layout/layout";
 
-// // UTILS
+// UTILS
 
-// @import "utils/helpers";
-// @import "utils/backgrounds";
-// @import "utils/animate";
-// @import "utils/comps-animations";
+@import "utils/helpers";
+@import "utils/backgrounds";
+@import "utils/animate";
+@import "utils/comps-animations";
 
-// // ELEMENTS
+// ELEMENTS
 
-// @import "elements/buttons";
-// @import "elements/dropdown";
-// @import "elements/navs";
-// @import "elements/badges";
-// @import "elements/cards";
-// @import "elements/tabs";
-// @import "elements/accordions";
-// @import "elements/modals";
-// @import "elements/loaders";
-// @import "elements/progressbar";
-// @import "elements/timeline";
-// @import "elements/listgroup";
-// @import "elements/forms";
-// @import "elements/pagination";
-// @import "elements/chat";
-// @import "elements/forms-wizard";
+@import "elements/buttons";
+@import "elements/dropdown";
+@import "elements/navs";
+@import "elements/badges";
+@import "elements/cards";
+@import "elements/tabs";
+@import "elements/accordions";
+@import "elements/modals";
+@import "elements/loaders";
+@import "elements/progressbar";
+@import "elements/timeline";
+@import "elements/listgroup";
+@import "elements/forms";
+@import "elements/pagination";
+@import "elements/chat";
+@import "elements/forms-wizard";
 
-// // DASHBOARD BOXES
+// DASHBOARD BOXES
 
-// @import "widgets/chart-boxes/chart-boxes";
-// @import "widgets/content-boxes/content-boxes";
-// @import "widgets/profile-boxes/profile-boxes";
+@import "widgets/chart-boxes/chart-boxes";
+@import "widgets/content-boxes/content-boxes";
+@import "widgets/profile-boxes/profile-boxes";
 
-// // PAGES
+// PAGES
 
-// @import "pages/userpages";
+@import "pages/userpages";
 
-// // Applications
+// Applications
 
-// @import "applications/applications-base";
+@import "applications/applications-base";
 
-// // COMPONENTS
+// COMPONENTS
 
-// // Perfect Scrollbar
-// @import "components/perfect-scrollbar/perfect-scrollbar";
+// Perfect Scrollbar
+@import "components/perfect-scrollbar/perfect-scrollbar";
 
-// // RC Tabs
-// @import "components/rc-tabs/rc-tabs";
+// RC Tabs
+@import "components/rc-tabs/rc-tabs";
 
-// // Loading Buttons
-// @import "components/loading-buttons/loading-buttons";
+// Loading Buttons
+@import "components/loading-buttons/loading-buttons";
 
-// // Hamburger Button
-// @import "components/hamburgers/hamburgers";
+// Hamburger Button
+@import "components/hamburgers/hamburgers";
 
-// // Drawer
-// @import "components/drawer/drawer";
+// Drawer
+@import "components/drawer/drawer";
 
-// // Notifications
-// @import "components/notifications/sweetalerts";
-// @import "components/notifications/toastify";
+// Notifications
+@import "components/notifications/sweetalerts";
+@import "components/notifications/toastify";
 
-// // Modals
-// @import "components/modals/rodal";
+// Modals
+@import "components/modals/rodal";
 
-// // Progress Bar
-// @import "components/progress-bar/progress-bar";
+// Progress Bar
+@import "components/progress-bar/progress-bar";
 
-// // Slick Carousel
-// @import "components/slick-carousel/slick/slick";
+// Slick Carousel
+@import "components/slick-carousel/slick/slick";
 
-// // Block loading
-// @import "components/block-loading/block-loading";
+// Block loading
+@import "components/block-loading/block-loading";
 
-// // Popovers & Tooltips
-// @import "components/popovers-tooltips/popovers-tooltips";
+// Popovers & Tooltips
+@import "components/popovers-tooltips/popovers-tooltips";
 
-// // Sticky Elements
-// @import "components/sticky-elements/sticky-elements";
+// Sticky Elements
+@import "components/sticky-elements/sticky-elements";
 
-// // Calendar
-// @import "components/calendar/calendar";
+// Calendar
+@import "components/calendar/calendar";
 
-// // Splitters
-// @import "components/splitters/splitters";
+// Splitters
+@import "components/splitters/splitters";
 
-// // Tree View
-// @import "components/tree-view/tree-view";
+// Tree View
+@import "components/tree-view/tree-view";
 
-// // Tables
-// @import "components/tables/tables";
+// Tables
+@import "components/tables/tables";
 
-// // Icons
-// @import "components/icons/linearicons";
-// @import "components/icons/p7icons";
+// Icons
+@import "components/icons/linearicons";
+@import "components/icons/p7icons";
 
-// // FORMS
+// FORMS
 
-// @import "components/forms/datepicker/datepicker";
-// @import "components/forms/rangeslider/rangeslider";
-// @import "components/forms/multiselect/multiselect";
-// @import "components/forms/wysiwyg/wysiwyg";
-// @import "components/forms/toggle-switch/switch";
-// @import "components/forms/dropzone/dropzone";
-// @import "components/forms/typeahead/typeahead";
+@import "components/forms/datepicker/datepicker";
+@import "components/forms/rangeslider/rangeslider";
+@import "components/forms/multiselect/multiselect";
+@import "components/forms/wysiwyg/wysiwyg";
+@import "components/forms/toggle-switch/switch";
+@import "components/forms/dropzone/dropzone";
+@import "components/forms/typeahead/typeahead";
 
-// // REACT WIDGETS
+// REACT WIDGETS
 
-// @import "components/react-widgets/scss/react-widgets";
+@import "components/react-widgets/scss/react-widgets";
 
-// // DEMO
+// DEMO
 
-// @import "demo-ui/demo";
+@import "demo-ui/demo";
 
-// // Responsive
+// Responsive
 
-// @import "layout/responsive/responsive-base";
+@import "layout/responsive/responsive-base";
