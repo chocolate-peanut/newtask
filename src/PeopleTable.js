@@ -5,7 +5,7 @@ import axios from 'axios';
 const PeopleTable = () => {
     const [people, setPeople] = useState([]);
 
-    useEffect(() => { 
+    useEffect(() => {
         const fetchPeople = async () => {
             try {
                 const response = await axios.get('https://swapi.dev/api/people/');
@@ -14,7 +14,7 @@ const PeopleTable = () => {
                 console.error('Error fetching people:', error);
             }
         };
-        
+
         fetchPeople();
     }, []);
 
@@ -65,84 +65,36 @@ const PeopleTable = () => {
     } = useTable({ columns, data: people });
 
     return (
-        <table className="table table-bordered" {...getTableProps()}>
-
-            <thead>
-                {headerGroups.map(headerGroup => (
-                    <tr {...headerGroup.getHeaderGroupProps()}>
-                        {headerGroup.headers.map(column => (
-                            <th {...column.getHeaderProps()}>{column.render('Header')}</th>
+        <div className="main-card mb-3 card">
+            <div className="card-body">
+                <table className="table table-hover table-striped table-bordered" {...getTableProps()}>
+                    <thead>
+                        {headerGroups.map(headerGroup => (
+                            <tr {...headerGroup.getHeaderGroupProps()}>
+                                {headerGroup.headers.map(column => (
+                                    <th {...column.getHeaderProps()}>{column.render('Header')}</th>
+                                ))}
+                            </tr>
                         ))}
-                    </tr>
-                ))}
-            </thead>
+                    </thead>
 
-            <tbody {...getTableBodyProps()}>
-                {rows.map(row => {
-                    prepareRow(row);
-                    return (
-                        <tr {...row.getRowProps()}>
-                            {row.cells.map(cell => (
-                                <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
-                            ))}
-                        </tr>
-                    );
-                })}
-            </tbody>
-            
-        </table>
+                    <tbody {...getTableBodyProps()}>
+                        {rows.map(row => {
+                            prepareRow(row);
+                            return (
+                                <tr {...row.getRowProps()}>
+                                    {row.cells.map(cell => (
+                                        <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                                    ))}
+                                </tr>
+                            );
+                        })}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
     );
 };
 
 export default PeopleTable;
-
-
-// const PeopleTable = () => {
-//     const [people, setPeople] = useState([]);
-
-//     useEffect(() => { 
-//         const fetchPeople = async () => {
-//             try {
-//                 const response = await axios.get('https://swapi.dev/api/people/');
-//                 setPeople(response.data.results);
-//             } catch (error) {
-//                 console.error('Error fetching people:', error);
-//             }
-//         };
-
-//         fetchPeople();
-//     }, []);
-
-//     return (
-//         <table className="table table-bordered">
-//             <thead>
-//                 <tr>
-//                     <th>Name</th>
-//                     <th>Height</th>
-//                     <th>Mass</th>
-//                     <th>Hair Color</th>
-//                     <th>Skin Color</th>
-//                     <th>Eye Color</th>
-//                     <th>Birth Year</th>
-//                     <th>Gender</th>
-//                 </tr>
-//             </thead>
-//             <tbody>
-//                 {people.map((person) => (
-//                     <tr key={person.url}>
-//                         <td>{person.name}</td>
-//                         <td>{person.height}</td>
-//                         <td>{person.mass}</td>
-//                         <td>{person.hair_color}</td>
-//                         <td>{person.skin_color}</td>
-//                         <td>{person.eye_color}</td>
-//                         <td>{person.birth_year}</td>
-//                         <td>{person.gender}</td>
-//                     </tr>
-//                 ))}
-//             </tbody>
-//         </table>
-//     );
-// };
-
-// export default PeopleTable;
