@@ -2,16 +2,22 @@ import React, { useEffect, useState } from "react";
 import { useTable } from "react-table";
 import axios from "axios";
 
+import LoadingOverlay from "./components/Overlay/Loading";
+
 const PeopleTable = () => {
   const [people, setPeople] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const fetchPeople = async () => {
       try {
+        setIsLoading(true);
         const response = await axios.get("https://swapi.dev/api/people/");
         setPeople(response.data.results);
       } catch (error) {
         console.error("Error fetching people:", error);
+      } finally {
+        setIsLoading(false);
       }
     };
 
@@ -92,6 +98,7 @@ const PeopleTable = () => {
           </tbody>
         </table>
       </div>
+      {isLoading ? <LoadingOverlay /> : <></>}
     </div>
   );
 };
