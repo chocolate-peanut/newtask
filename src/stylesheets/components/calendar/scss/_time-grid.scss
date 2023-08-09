@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'time-column';
+@import "variables";
+@import "time-column";
 
 .rbc-slot-selection {
   z-index: 10;
@@ -38,7 +38,6 @@
   }
 }
 
-
 .rbc-time-header {
   display: flex;
   flex: 0 0 auto; // should not shrink below height
@@ -63,7 +62,7 @@
   }
 
   > .rbc-row:first-child {
-    border-bottom: 1px solid  $cell-border;
+    border-bottom: 1px solid $cell-border;
   }
 
   .rbc-gutter-cell {
@@ -119,7 +118,7 @@
     left: -3px;
     top: -3px;
 
-    content: ' ';
+    content: " ";
     background-color: $current-time-color;
 
     border-radius: 50%;

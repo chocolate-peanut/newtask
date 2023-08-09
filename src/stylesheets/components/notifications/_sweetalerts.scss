@@ -100,7 +100,8 @@ body.stop-scrolling {
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
 
-    &::before, &::after {
+    &::before,
+    &::after {
       content: "";
       width: 20px;
       height: 6px;
@@ -180,7 +181,13 @@ body.stop-scrolling {
     vertical-align: middle;
     user-select: none;
     border: $btn-border-width solid transparent;
-    @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
+    @include button-size(
+      $btn-padding-y,
+      $btn-padding-x,
+      $font-size-base,
+      $btn-line-height,
+      $btn-border-radius
+    );
     @include transition($btn-transition);
     @include button-variant($primary, $primary);
 
@@ -240,18 +247,17 @@ body.stop-scrolling {
     transition-delay: 0s;
   }
 
-  &[data-has-cancel-button=false] button {
+  &[data-has-cancel-button="false"] button {
     box-shadow: none !important;
   }
 
-  &[data-has-confirm-button=false][data-has-cancel-button=false] {
+  &[data-has-confirm-button="false"][data-has-cancel-button="false"] {
     padding-bottom: 40px;
   }
 
   .sa-button-container {
     padding: $spacer 0 0;
   }
-
 }
 
 .sa-icon {
@@ -356,7 +362,7 @@ body.stop-scrolling {
 
     &::before,
     &::after {
-      content: '';
+      content: "";
       -webkit-border-radius: 40px;
       border-radius: 50%;
       position: absolute;
@@ -595,42 +601,42 @@ body.stop-scrolling {
   }
 }
 
-.showSweetAlert[data-animation=pop] {
+.showSweetAlert[data-animation="pop"] {
   -webkit-animation: showSweetAlert 0.3s;
   animation: showSweetAlert 0.3s;
 }
 
-.showSweetAlert[data-animation=none] {
+.showSweetAlert[data-animation="none"] {
   -webkit-animation: none;
   animation: none;
 }
 
-.showSweetAlert[data-animation=slide-from-top] {
+.showSweetAlert[data-animation="slide-from-top"] {
   -webkit-animation: slideFromTop 0.3s;
   animation: slideFromTop 0.3s;
 }
 
-.showSweetAlert[data-animation=slide-from-bottom] {
+.showSweetAlert[data-animation="slide-from-bottom"] {
   -webkit-animation: slideFromBottom 0.3s;
   animation: slideFromBottom 0.3s;
 }
 
-.hideSweetAlert[data-animation=pop] {
+.hideSweetAlert[data-animation="pop"] {
   -webkit-animation: hideSweetAlert 0.2s;
   animation: hideSweetAlert 0.2s;
 }
 
-.hideSweetAlert[data-animation=none] {
+.hideSweetAlert[data-animation="none"] {
   -webkit-animation: none;
   animation: none;
 }
 
-.hideSweetAlert[data-animation=slide-from-top] {
+.hideSweetAlert[data-animation="slide-from-top"] {
   -webkit-animation: slideToTop 0.4s;
   animation: slideToTop 0.4s;
 }
 
-.hideSweetAlert[data-animation=slide-from-bottom] {
+.hideSweetAlert[data-animation="slide-from-bottom"] {
   -webkit-animation: slideToBottom 0.3s;
   animation: slideToBottom 0.3s;
 }
@@ -880,7 +886,7 @@ body.stop-scrolling {
 
 @-webkit-keyframes pulseWarning {
   0% {
-    border-color: #F8D486;
+    border-color: #f8d486;
   }
   100% {
     border-color: $warning;
@@ -889,7 +895,7 @@ body.stop-scrolling {
 
 @keyframes pulseWarning {
   0% {
-    border-color: #F8D486;
+    border-color: #f8d486;
   }
   100% {
     border-color: $warning;
@@ -903,7 +909,7 @@ body.stop-scrolling {
 
 @-webkit-keyframes pulseWarningIns {
   0% {
-    background-color: #F8D486;
+    background-color: #f8d486;
   }
   100% {
     background-color: $warning;
@@ -912,7 +918,7 @@ body.stop-scrolling {
 
 @keyframes pulseWarningIns {
   0% {
-    background-color: #F8D486;
+    background-color: #f8d486;
   }
   100% {
     background-color: $warning;
@@ -947,29 +953,24 @@ body.stop-scrolling {
 /* This file is automatically merged into sweet-alert.min.js through Gulp */
 /* Error icon */
 .sweet-alert .sa-icon.sa-error .sa-line.sa-left {
-  -ms-transform: rotate(45deg) \9
-;
+  -ms-transform: rotate(45deg) \9;
 }
 
 .sweet-alert .sa-icon.sa-error .sa-line.sa-right {
-  -ms-transform: rotate(-45deg) \9
-;
+  -ms-transform: rotate(-45deg) \9;
 }
 
 /* Success icon */
 .sweet-alert .sa-icon.sa-success {
-  border-color: transparent \9
-;
+  border-color: transparent \9;
 }
 
 .sweet-alert .sa-icon.sa-success .sa-line.sa-tip {
-  -ms-transform: rotate(45deg) \9
-;
+  -ms-transform: rotate(45deg) \9;
 }
 
 .sweet-alert .sa-icon.sa-success .sa-line.sa-long {
-  -ms-transform: rotate(-45deg) \9
-;
+  -ms-transform: rotate(-45deg) \9;
 }
 
 /*!
@@ -1083,7 +1084,7 @@ body.stop-scrolling {
     transform: translateY(-145%);
   }
   10% {
-    opacity: .5;
+    opacity: 0.5;
   }
   20% {
     opacity: 1;
@@ -1096,7 +1097,7 @@ body.stop-scrolling {
     transform: translateY(0);
   }
   90% {
-    opacity: .5;
+    opacity: 0.5;
   }
   100% {
     opacity: 0;
@@ -1112,7 +1113,7 @@ body.stop-scrolling {
     transform: translateY(-145%);
   }
   10% {
-    opacity: .5;
+    opacity: 0.5;
   }
   20% {
     opacity: 1;
@@ -1125,7 +1126,7 @@ body.stop-scrolling {
     transform: translateY(0);
   }
   90% {
-    opacity: .5;
+    opacity: 0.5;
   }
   100% {
     opacity: 0;
@@ -1141,7 +1142,7 @@ body.stop-scrolling {
     transform: translateY(-145%);
   }
   10% {
-    opacity: .5;
+    opacity: 0.5;
   }
   20% {
     opacity: 1;
@@ -1154,7 +1155,7 @@ body.stop-scrolling {
     transform: translateY(0);
   }
   90% {
-    opacity: .5;
+    opacity: 0.5;
   }
   100% {
     opacity: 0;
@@ -1172,7 +1173,7 @@ body.stop-scrolling {
     transform: translateY(-145%);
   }
   10% {
-    opacity: .5;
+    opacity: 0.5;
   }
   20% {
     opacity: 1;
@@ -1189,7 +1190,7 @@ body.stop-scrolling {
     transform: translateY(0);
   }
   90% {
-    opacity: .5;
+    opacity: 0.5;
   }
   100% {
     opacity: 0;

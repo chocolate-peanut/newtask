@@ -15,7 +15,11 @@
   &.rw-state-focus {
     @include state-focus($list-bg-focus, $list-border-focus, $list-color-focus);
     &:hover {
-      @include state-focus($list-bg-focus, $list-border-focus, $list-color-focus);
+      @include state-focus(
+        $list-bg-focus,
+        $list-border-focus,
+        $list-color-focus
+      );
     }
   }
 
@@ -25,7 +29,11 @@
   }
 
   &.rw-state-selected {
-    @include state-select($list-bg-select, $list-border-select, $list-color-select);
+    @include state-select(
+      $list-bg-select,
+      $list-border-select,
+      $list-color-select
+    );
   }
 
   fieldset[disabled] &,

@@ -350,7 +350,6 @@
       background-color: $dropdown-link-hover-bg;
       color: $dropdown-link-hover-color;
     }
-
   }
 
   &--keyboard-selected {
@@ -385,10 +384,9 @@
   }
 }
 
-
 .react-datepicker__day--selecting-range-start,
 .react-datepicker__day--selecting-range-end {
-  background-color: $success  !important;
+  background-color: $success !important;
   color: $white !important;
 }
 

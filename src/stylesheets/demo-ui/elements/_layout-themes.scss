@@ -3,19 +3,19 @@
 $themes: ();
 
 $themes: map_merge(
-                (
-                    "default": (
-
-                    ),
-                    "light-blue": (
-
-                    ),
-                ),
-                $themes
+  (
+    "default": (),
+    "light-blue": (),
+  ),
+  $themes
 );
 
-@mixin theme-variant($app-container-bg, $app-sidebar-bg, $app-header-bg, $app-header-logo-bg) {
-
+@mixin theme-variant(
+  $app-container-bg,
+  $app-sidebar-bg,
+  $app-header-bg,
+  $app-header-logo-bg
+) {
 }
 
 @each $theme, $colors in $themes {

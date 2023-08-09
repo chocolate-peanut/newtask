@@ -15,7 +15,6 @@
 
 .nav-tabs {
   .nav-link {
-
     &:hover {
       color: $primary !important;
     }
@@ -28,7 +27,6 @@
 
 .nav-pills {
   .nav-link {
-
     &:hover {
       color: $primary !important;
     }
@@ -65,7 +63,7 @@
   z-index: 1;
   white-space: nowrap;
   padding: $nav-link-padding-y $nav-link-padding-x;
-  transition: all .2s;
+  transition: all 0.2s;
 
   &:hover {
     color: $primary;
@@ -153,7 +151,7 @@
 
       &::before {
         position: absolute;
-        content: '';
+        content: "";
         background: $white;
         width: 100%;
         height: 100%;
@@ -207,7 +205,6 @@
 
   &:focus {
     outline: none;
-
   }
 }
 
@@ -223,8 +220,7 @@
 
 .RRT__showmore--selected {
   box-shadow: 0 16px 26px -10px rgba($primary, 0.56),
-  0 4px 25px 0px rgba(0, 0, 0, 0.12),
-  0 8px 10px -5px rgba($primary, 0.2);
+    0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba($primary, 0.2);
 }
 
 .RRT__showmore-list {
@@ -318,9 +314,8 @@
   }
 
   &.text-white {
-
     .RRT__tab {
-      color: rgba(255, 255, 255, .6);
+      color: rgba(255, 255, 255, 0.6);
 
       &:hover {
         color: $white;
@@ -369,8 +364,7 @@
     margin-top: 0;
     @include border-radius($border-radius);
     box-shadow: 0 16px 26px -10px rgba($primary, 0.56),
-    0 4px 25px 0px rgba(0, 0, 0, 0.12),
-    0 8px 10px -5px rgba($primary, 0.2);
+      0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba($primary, 0.2);
   }
 }
 
@@ -432,8 +426,12 @@
       height: 20px;
       position: absolute;
       z-index: 10;
-      content: '';
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%);
+      content: "";
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 1) 20%,
+        rgba(255, 255, 255, 0) 100%
+      );
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
     }
 
@@ -441,7 +439,11 @@
       bottom: 0;
       top: auto;
 
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 80%);
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 80%
+      );
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
     }
   }
@@ -461,8 +463,8 @@
 
     .tab-subheading {
       padding: 5px 0 0;
-      opacity: .6;
-      transition: all .2s;
+      opacity: 0.6;
+      transition: all 0.2s;
     }
 
     & > .nav {
@@ -477,7 +479,7 @@
           background: $white;
           .tab-subheading {
             color: $black;
-            opacity: .9;
+            opacity: 0.9;
           }
         }
 
@@ -491,7 +493,7 @@
 
           .tab-subheading {
             color: $black;
-            opacity: .9;
+            opacity: 0.9;
           }
         }
       }

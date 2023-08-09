@@ -1,4 +1,3 @@
-
 .rw-btn {
   position: relative;
   color: $btn-color;
@@ -16,7 +15,7 @@
 }
 
 .rw-btn-select {
-  @include opacity(.75);
+  @include opacity(0.75);
   transition: opacity 150ms ease-in;
 
   &:hover,
@@ -39,8 +38,8 @@
 .rw-btn-select[disabled],
 .rw-btn-primary[disabled],
 fieldset[disabled] .rw-btn-select,
-fieldset[disabled] .rw-btn-primary, {
+fieldset[disabled] .rw-btn-primary {
   @include state-disabled();
-  @include opacity(.65);
+  @include opacity(0.65);
   pointer-events: none;
 }
