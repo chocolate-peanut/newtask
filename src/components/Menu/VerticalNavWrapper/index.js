@@ -15,7 +15,7 @@ class VerticalNavWrapper extends React.Component {
         {
           icon: "pe-7s-users metismenu-icon-red",
           label: "People",
-          to: "#/people",
+          to: "/people",
         },
       ],
     });
